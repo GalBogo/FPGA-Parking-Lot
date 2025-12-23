@@ -1,0 +1,17 @@
+# 1. שעון (קבוע)
+set_io -nowarn clk 35
+
+# 2. ריסט - נשתמש בכפתור המובנה בלוח
+set_io -nowarn rst 10
+
+# 3. כניסות (נשתמש במתגים החיצוניים ב-PMOD 1A)
+# מתג 1 -> כניסה
+set_io -nowarn car_enter 4
+# מתג 2 -> יציאה
+set_io -nowarn car_exit 2
+
+# 4. יציאות (לדים מובנים בלוח)
+# לד אדום (Pin 11) - חניון מלא
+set_io -nowarn lot_full 11
+# לד ירוק (Pin 37) - שער נפתח
+set_io -nowarn gate_open 37
